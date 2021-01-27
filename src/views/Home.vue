@@ -17,7 +17,7 @@
     <h1 class="center">Best Seller</h1>
     <div class="bestseller_container">
       <div  v-for="product in productDetails" :key="product.id">
-        <router-link :to="`/product/${product.product.productId}`" class="link"><Product :name="product.product.productName" :price="product.price" :imageUrl="product.product.imageUrl"></Product></router-link>
+        <router-link :to="`/product/${product.product.productId}`" class="link"><Product :name="product.product.productName" :price="product.price" :imageUrl="product.imageUrl"></Product></router-link>
       </div>
     </div>
   </div>

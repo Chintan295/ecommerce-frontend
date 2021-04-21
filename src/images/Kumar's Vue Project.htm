@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://localhost:8081/businesshomepage -->
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="http://localhost:8081/favicon.ico">
+    <script src="./Kumar&#39;s Vue Project_files/vue.js"></script>
+    <title>Kumar's Vue Project</title>
+  <link href="http://localhost:8081/about.6aa8cfc18cca01d0abcf.hot-update.js" rel="prefetch"><link href="./Kumar&#39;s Vue Project_files/about.js" rel="prefetch"><link href="./Kumar&#39;s Vue Project_files/chunk-vendors.js" rel="preload" as="script"><link href="./Kumar&#39;s Vue Project_files/index.js" rel="preload" as="script"><style type="text/css">
+#quora_logo[data-v-61dd7a3d]{
+  position: fixed;
+  width: 125px;
+  height: 79px;
+  left: 26px;
+  top: 0px;
+}
+#rectangle[data-v-61dd7a3d]{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: #be1e1e;
+  /* border-radius: 10px; */
+  margin-bottom: 100px;
+}
+#search_bar[data-v-61dd7a3d]{
+  position: fixed;
+  width: 658px;
+  height: 34px;
+  left: 360px;
+  top: 20px;
+  background: #FEFEFE;
+  border: 0px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+#search_icon[data-v-61dd7a3d]{
+  position: fixed;
+  width: 36px;
+  height: 38px;
+  left: 979px;
+  top: 18px;
+}
+#question_tab[data-v-61dd7a3d]{
+  position: fixed;
+  width: 30px;
+  height: 31px;
+  left: 1115px;
+  top: 25px;
+}
+#notification[data-v-61dd7a3d]{
+  position: fixed;
+  width: 33px;
+  height: 30px;
+  left: 1170px;
+  top: 25px;
+}
+#request_button[data-v-61dd7a3d]{
+  position: fixed;
+  width: 63px;
+  height: 60px;
+  left: 1220px;
+  top: 10px;
+}
+#user_name[data-v-61dd7a3d]{
+  position: fixed;
+width: 136px;
+height: 30px;
+left: 1220px;
+top: 3px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
+#user_icon[data-v-61dd7a3d]{
+  position: absolute;
+  width: 31px;
+  height: 30px;
+  left: 1370px;
+  top: 25px;
+}
+#logout_icon[data-v-61dd7a3d]{
+  position: absolute;
+  width: 34px;
+  height: 30px;
+  left: 1397px;
+  top: 20px;
+}
+</style><style type="text/css">#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#space_after_header {
+  margin-bottom: 100px;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+    font-weight: bold;
+    color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+      color: #42b983;
+}
+</style><script charset="utf-8" src="./Kumar&#39;s Vue Project_files/about.js"></script><style type="text/css">
+#rectangle[data-v-9c4568f6]{
+  position: fixed;
+  top:100px;
+  left:1030px;
+  width: 263px;
+  height: 263px;
+  background: rgb(235, 232, 232);
+  margin-left: 70px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#rectangle_two[data-v-9c4568f6]{
+  position: fixed;
+  top: 100px;
+  left:1030px;
+  width: 263px;
+  height: 263px;
+  background: rgb(235, 232, 232);
+  margin-left: 70px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 320px;
+}
+</style><style type="text/css">
+#rectangle[data-v-41382e2e]{
+  position: fixed;
+  top:100px;
+  left:25px;
+  width: 263px;
+  height: 600px;
+  background: rgb(235, 232, 232);
+  border-radius: 10px;
+}
+.shift[data-v-41382e2e]{
+  left:0px;
+  font-family: Georgia, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:120%;
+}
+.removeline[data-v-41382e2e]{
+  text-decoration: none;
+  color: black;
+}
+</style><style type="text/css">
+#rectangle[data-v-0335f4d0]{
+  width: 663px;
+  height: auto;
+  background: rgb(235, 232, 232);
+  margin-left: 360px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.responder_info[data-v-0335f4d0]{
+  display: flex;
+  margin-bottom: 20px;
+}
+.like_count[data-v-0335f4d0]{
+  position: relative;
+  font-size: 13px;
+  top: 15px;
+  right:275px;
+}
+.dislike_count[data-v-0335f4d0]{
+  position: relative;
+  font-size: 13px;
+  top: 15px;
+  right:250px;
+}
+#user_icon[data-v-0335f4d0]{
+  width: 44px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#answer_responder[data-v-0335f4d0]{
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 350px;
+  word-break: break-all;
+  white-space: nowrap;
+}
+h2[data-v-0335f4d0]{
+  width: 663px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
+}
+#date[data-v-0335f4d0]{
+  width: auto;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 570px;
+  word-break: break-all;
+  white-space: nowrap;
+}
+#answer[data-v-0335f4d0]{
+  text-align: left;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#like_icon[data-v-0335f4d0]{
+  position: relative;
+  right: 250px;
+  width: 44px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+#dislike_icon[data-v-0335f4d0]{
+  position: relative;
+  right: 220px;
+  width: 40px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+#comment_icon[data-v-0335f4d0]{
+  position: relative;
+  right: 190px;
+  width: 40px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+.removeline[data-v-0335f4d0]{
+  text-decoration: none;
+  color: black;
+}
+</style><style type="text/css">
+#ask_a_question[data-v-ce7289b0] {
+  margin-left: 120px;
+}
+#landing_page[data-v-ce7289b0]{
+  display: flex;
+}
+#category_tab[data-v-ce7289b0]{
+  position: relative;
+  top: 30px;
+  right: 290px;
+}
+#ask_question_category[data-v-ce7289b0]{
+  position: relative;
+  left: 50px;
+  margin-left: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background: #b82929;
+  color: white;
+  margin-bottom: 10px;
+}
+textarea[data-v-ce7289b0]{
+  margin-left: 0px;
+  border-radius: 10px;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+#ask_question[data-v-ce7289b0]{
+
+  margin-left: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background: #b82929;
+  color: white;
+  margin-bottom: 10px;
+}
+</style><style type="text/css">
+.rectangle[data-v-32f0aa64]{
+  width: 663px;
+  height: auto;
+  background: rgb(235, 232, 232);
+  margin-left: 360px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.approve[data-v-32f0aa64]{
+  /* margin-left: 870px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background: #b82929;
+  color: white;
+  margin-left: 430px;
+  margin-top: 0px;
+}
+.responder_info[data-v-32f0aa64]{
+  display: flex;
+  margin-bottom: 20px;
+}
+.like_count[data-v-32f0aa64]{
+  position: relative;
+  font-size: 13px;
+  top: 15px;
+  right:275px;
+}
+.dislike_count[data-v-32f0aa64]{
+  position: relative;
+  font-size: 13px;
+  top: 15px;
+  right:250px;
+}
+#user_icon[data-v-32f0aa64]{
+  width: 44px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#answer_responder[data-v-32f0aa64]{
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 350px;
+  word-break: break-all;
+  white-space: nowrap;
+}
+h2[data-v-32f0aa64]{
+  width: 663px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
+}
+#date[data-v-32f0aa64]{
+  width: auto;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 570px;
+  word-break: break-all;
+  white-space: nowrap;
+}
+#answer[data-v-32f0aa64]{
+  text-align: left;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#like_icon[data-v-32f0aa64]{
+  position: relative;
+  right: 250px;
+  width: 44px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+#dislike_icon[data-v-32f0aa64]{
+  position: relative;
+  right: 220px;
+  width: 40px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+#comment_icon[data-v-32f0aa64]{
+  position: relative;
+  right: 190px;
+  width: 40px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+.removeline[data-v-32f0aa64]{
+  text-decoration: none;
+  color: black;
+}
+.disapprove[data-v-32f0aa64] {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background: #b82929;
+  color: white;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+</style><style type="text/css">
+#ask_a_question[data-v-69546d08] {
+  margin-left: 120px;
+}
+#landing_page[data-v-69546d08]{
+  display: flex;
+}
+#category_tab[data-v-69546d08]{
+  position: relative;
+  top: 30px;
+  right: 290px;
+}
+#ask_question_category[data-v-69546d08]{
+  position: relative;
+  left: 50px;
+  margin-left: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background: #b82929;
+  color: white;
+  margin-bottom: 10px;
+}
+textarea[data-v-69546d08]{
+  margin-left: 0px;
+  border-radius: 10px;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+#ask_question[data-v-69546d08]{
+
+  margin-left: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background: #b82929;
+  color: white;
+  margin-bottom: 10px;
+}
+</style></head>
+  <body>
+    <noscript>
+      <strong>We're sorry but Kumar's Vue Project doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"><div data-v-61dd7a3d="" id="rectangle"><img data-v-61dd7a3d="" src="./Kumar&#39;s Vue Project_files/quora_logo.d0499462.png" alt="" id="quora_logo"><input data-v-61dd7a3d="" type="text" id="search_bar" placeholder="Search Quora" style="display: none;"><!----><!----><img data-v-61dd7a3d="" src="./Kumar&#39;s Vue Project_files/bell_icon.161c0718.png" alt="" id="notification"><!----><a data-v-61dd7a3d="" href="http://localhost:8081/businessprofile" class=""><img data-v-61dd7a3d="" src="./Kumar&#39;s Vue Project_files/profile-user.5700c041.png" alt="" id="user_icon"></a></div><div id="space_after_header"></div><div data-v-69546d08="" id="landing_page"><div data-v-41382e2e="" data-v-69546d08="" id="rectangle"><div data-v-41382e2e="" style="margin-left: 0px;"><h2 data-v-41382e2e="" style="font-family: Georgia, Helvetica, sans-serif; font-weight: bold; margin-bottom: 30px; border-bottom: solid; padding-bottom: 20px;">Category</h2><div data-v-41382e2e=""><a data-v-41382e2e="" href="http://localhost:8081/category/Sports" class="removeline"><p data-v-41382e2e="" class="shift">Sports</p></a><a data-v-41382e2e="" href="http://localhost:8081/category/Bollywood" class="removeline"><p data-v-41382e2e="" class="shift">Bollywood</p></a><a data-v-41382e2e="" href="http://localhost:8081/category/Technology" class="removeline"><p data-v-41382e2e="" class="shift">Technology</p></a><a data-v-41382e2e="" href="http://localhost:8081/category/Science" class="removeline"><p data-v-41382e2e="" class="shift">Science</p></a><a data-v-41382e2e="" href="http://localhost:8081/category/Maths" class="removeline"><p data-v-41382e2e="" class="shift">Maths</p></a></div></div></div><div data-v-69546d08=""><div data-v-32f0aa64="" data-v-69546d08="" class="rectangle"><div data-v-32f0aa64="" class="responder_info"><img data-v-32f0aa64="" src="./Kumar&#39;s Vue Project_files/profile-user.5700c041.png" alt="" id="user_icon"><span data-v-32f0aa64="" id="answer_responder">Mohit Gupta</span><p data-v-32f0aa64="" id="date">10 December 2021</p></div><h2 data-v-32f0aa64="">This is supposed to be a question?</h2><p data-v-32f0aa64="" id="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus distinctio facilis repudiandae aspernatur accusamus quo dicta, repellendus accusantium ad nihil, animi perspiciatis ipsam, debitis nisi perferendis optio nostrum rerum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ullam! Earum obcaecati recusandae nemo unde explicabo iste culpa voluptates, voluptatem aliquid maiores doloremque impedit tenetur vero! Itaque iusto rem non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae autem magnam minus ex saepe facere aliquam porro iusto totam corrupti quaerat, obcaecati accusamus natus rerum libero, inventore vero corporis!</p><div data-v-32f0aa64="" style="display: flex;"><button data-v-32f0aa64="" class="approve">Approve</button><button data-v-32f0aa64="" class="disapprove">Disapprove</button></div></div><div data-v-32f0aa64="" data-v-69546d08="" class="rectangle"><div data-v-32f0aa64="" class="responder_info"><img data-v-32f0aa64="" src="./Kumar&#39;s Vue Project_files/profile-user.5700c041.png" alt="" id="user_icon"><span data-v-32f0aa64="" id="answer_responder">Mohit Gupta</span><p data-v-32f0aa64="" id="date">10 December 2021</p></div><h2 data-v-32f0aa64="">This is supposed to be a question?</h2><p data-v-32f0aa64="" id="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus distinctio facilis repudiandae aspernatur accusamus quo dicta, repellendus accusantium ad nihil, animi perspiciatis ipsam, debitis nisi perferendis optio nostrum rerum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ullam! Earum obcaecati recusandae nemo unde explicabo iste culpa voluptates, voluptatem aliquid maiores doloremque impedit tenetur vero! Itaque iusto rem non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae autem magnam minus ex saepe facere aliquam porro iusto totam corrupti quaerat, obcaecati accusamus natus rerum libero, inventore vero corporis!</p><div data-v-32f0aa64="" style="display: flex;"><button data-v-32f0aa64="" class="approve">Approve</button><button data-v-32f0aa64="" class="disapprove">Disapprove</button></div></div><div data-v-32f0aa64="" data-v-69546d08="" class="rectangle"><div data-v-32f0aa64="" class="responder_info"><img data-v-32f0aa64="" src="./Kumar&#39;s Vue Project_files/profile-user.5700c041.png" alt="" id="user_icon"><span data-v-32f0aa64="" id="answer_responder">Mohit Gupta</span><p data-v-32f0aa64="" id="date">10 December 2021</p></div><h2 data-v-32f0aa64="">This is supposed to be a question?</h2><p data-v-32f0aa64="" id="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus distinctio facilis repudiandae aspernatur accusamus quo dicta, repellendus accusantium ad nihil, animi perspiciatis ipsam, debitis nisi perferendis optio nostrum rerum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ullam! Earum obcaecati recusandae nemo unde explicabo iste culpa voluptates, voluptatem aliquid maiores doloremque impedit tenetur vero! Itaque iusto rem non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae autem magnam minus ex saepe facere aliquam porro iusto totam corrupti quaerat, obcaecati accusamus natus rerum libero, inventore vero corporis!</p><div data-v-32f0aa64="" style="display: flex;"><button data-v-32f0aa64="" class="approve">Approve</button><button data-v-32f0aa64="" class="disapprove">Disapprove</button></div></div><div data-v-32f0aa64="" data-v-69546d08="" class="rectangle"><div data-v-32f0aa64="" class="responder_info"><img data-v-32f0aa64="" src="./Kumar&#39;s Vue Project_files/profile-user.5700c041.png" alt="" id="user_icon"><span data-v-32f0aa64="" id="answer_responder">Mohit Gupta</span><p data-v-32f0aa64="" id="date">10 December 2021</p></div><h2 data-v-32f0aa64="">This is supposed to be a question?</h2><p data-v-32f0aa64="" id="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus distinctio facilis repudiandae aspernatur accusamus quo dicta, repellendus accusantium ad nihil, animi perspiciatis ipsam, debitis nisi perferendis optio nostrum rerum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ullam! Earum obcaecati recusandae nemo unde explicabo iste culpa voluptates, voluptatem aliquid maiores doloremque impedit tenetur vero! Itaque iusto rem non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae autem magnam minus ex saepe facere aliquam porro iusto totam corrupti quaerat, obcaecati accusamus natus rerum libero, inventore vero corporis!</p><div data-v-32f0aa64="" style="display: flex;"><button data-v-32f0aa64="" class="approve">Approve</button><button data-v-32f0aa64="" class="disapprove">Disapprove</button></div></div></div><div data-v-69546d08=""><div data-v-9c4568f6="" data-v-69546d08=""><div data-v-9c4568f6="" id="rectangle"><p data-v-9c4568f6="">advertisement</p><img data-v-9c4568f6="" src="./Kumar&#39;s Vue Project_files/{{}}" alt=""></div><div data-v-9c4568f6="" id="rectangle_two"><p data-v-9c4568f6="">advertisement</p><img data-v-9c4568f6="" src="./Kumar&#39;s Vue Project_files/{{}}" alt=""></div></div><div data-v-9c4568f6="" data-v-69546d08=""><div data-v-9c4568f6="" id="rectangle"><p data-v-9c4568f6="">advertisement</p><img data-v-9c4568f6="" src="./Kumar&#39;s Vue Project_files/{{}}" alt=""></div><div data-v-9c4568f6="" id="rectangle_two"><p data-v-9c4568f6="">advertisement</p><img data-v-9c4568f6="" src="./Kumar&#39;s Vue Project_files/{{}}" alt=""></div></div></div></div></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="./Kumar&#39;s Vue Project_files/chunk-vendors.js"></script><script type="text/javascript" src="./Kumar&#39;s Vue Project_files/index.js"></script>
+
+</body></html>
